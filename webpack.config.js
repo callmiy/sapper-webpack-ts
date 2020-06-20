@@ -19,8 +19,8 @@ const tsLoader = {
     {
       loader: "ts-loader",
       options: {
-        // skip type checking
-        transpileOnly: true,
+        // skip type checking, except in production
+        transpileOnly: mode !== "production",
       },
     },
   ],
